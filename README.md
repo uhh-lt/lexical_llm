@@ -4,7 +4,7 @@ This repo contains code for paper [Are Large Language Models Good at Lexical Sem
 
 # Data
 
-The dataset we used could be accessed via this [link](google.com)
+The dataset we used could be accessed via this [link](https://drive.google.com/drive/folders/15qRrdPajFRxPC9s99VN_upEq2oh08bay?usp=sharing)
 
 In the provided folder exists dataset for LLM fine-tuning on WordNet and data from Semeval-16, that we used for taxonomy construction task.
 
