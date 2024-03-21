@@ -1,0 +1,18 @@
+SEED: # random seed
+  - 57
+CUDA_VISIBLE_DEVICES: # visible gpu devices
+  - 0
+BATCH_SIZE: # batch size
+  - 16
+MODEL_CHECKPOINT: # Hugging face checkpoint
+  - "HF model"
+OUT_NAME: # path to output created perplexities
+  - '/home/LLM_Taxonomy/LexicalEntailment/data/hyperlex_pairs_ppl.pickle'
+IN_NAME: # path to take from pairs
+  - '/home/LLM_Taxonomy/LexicalEntailment/data/hyperlex_pairs.pickle'
+LOAD: # whether to load from OUT NAME
+  - false
+USE_DEF: # whether to use lemmas of definitions
+  - true
+CASE: # case to do, pred_hypernym or leafs_no_leafs
+  - "pred_hypernym"

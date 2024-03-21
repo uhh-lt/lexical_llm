@@ -1,0 +1,38 @@
+SEED: # Random seed or everything
+  - 57
+CUDA_VISIBLE_DEVICES: # visible devices for GPU
+  - 3
+EPOCHS: # number of epochs to train
+  - 1
+BATCH_SIZE: # batch size
+  - 2
+LR: # learning rate
+  - 3e-4
+MIN_LR: # minimal learning rate
+  - 3e-4
+DATA_PATH: # path to training data
+  - "/home/<your path>"
+TEST_DATA_PATH: # path to test data
+  - "/home/<your path>"
+USING_PEFT: # whether to use lora
+  - True
+MODEL_TYPE: # type of model to load, llama or auto
+  - "Llama"
+MODEL_CHECKPOINT: # hugging face checkpoint
+  - "meta-llama/Llama-2-7b-hf"
+DTYPE: # half = blfloat16, other = fp32
+- "half"
+LOG_PRED_EVERY: # number of iterations to log predictions
+  - 100
+DATA_PREPROC_STYLE: # prepended to the name
+- "test_gpu"
+QLORA: # whether to use 4 bit quantization with LORA
+- true
+LOAD_PATH: # path to the previous checkpoint. could be blank
+- null
+USE_DEF_PROMPT: # whether to use definition or lemma in prompt
+- true
+USE_DEF_TARGET: # whether to use definition in target. Please, leave false
+- false
+USE_NUMBER_TARGET: # whether to use numbers from Wnet in target. Please, leave false
+- false

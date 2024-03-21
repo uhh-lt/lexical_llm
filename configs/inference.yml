@@ -1,0 +1,47 @@
+SEED: # Random seed or everything
+  - 57
+CUDA_VISIBLE_DEVICES: # visible devices for GPU
+  - 3
+BATCH_SIZE: # batch size
+  - 2
+DATA_PATH: # path to training data
+  - "/home/<your path>"
+TEST_DATA_PATH: # path to test data
+  - "/home/<your path>"
+USING_PEFT: # whether to use lora
+  - True
+MODEL_TYPE: # type of model to load, llama or auto
+  - "Llama"
+MODEL_CHECKPOINT: # hugging face checkpoint
+  - "meta-llama/Llama-2-7b-hf"
+DTYPE: # half = blfloat16, other = fp32
+- "half"
+DATA_PREPROC_STYLE: # prepended to each saving
+- "Your custom name"
+LOAD_PATH: # path to load model checkpoint
+- "meta-llama-Llama-2-7b-hf-best_ckpt"
+PREV_PREDICT: # whether exists previous prediction in pickle format
+- null
+STRATEGY: # whether to use sampling or beam search
+- "stohastic"
+NUM_BEAMS: # number of beams
+- 3
+MAX_NEW_TOKENS: # maximum new tokens
+- 32
+TEMPERATURE: # temperature of generation
+- 0.8
+TOP_K: # top k tokens in generation
+- 40
+NUM_RETURN_SEQUENCES: # number of sequences to return. can result in error if set to 1
+- 2
+NO_REPEAT_NGRAM: # ngrams are maximum without repetiotion
+- 3
+QLORA: # whether to use QLORA
+- true
+USE_DEF_PROMPT: # whether to use definition or lemma in prompt
+- true
+USE_DEF_TARGET: # whether to use definition in target. Please, leave false
+- false
+USE_NUMBER_TARGET: # whether to use numbers from Wnet in target. Please, leave false
+- false
+

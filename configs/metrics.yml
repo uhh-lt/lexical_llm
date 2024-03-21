@@ -1,0 +1,12 @@
+TEST_DATA_PATH: # path to test data
+  - "your path to test data"
+OUTPUT_NAME: # path to model generations
+  - "your path to model generations"
+SAVE_EXAMPLES: # whether to save model examples corresponding to test
+  - true
+SAVE_EXAMPLES_PATH: # path where to save examples
+  - "your path to saving directory"
+IDS_TO_USE: # whether to use hard subset or easy subset
+  - "all"
+HARD_IDS_PATH: # path to ids locating hard subset
+  - "your path to hard ids file"

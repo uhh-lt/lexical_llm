@@ -1,0 +1,14 @@
+DATA: # name of dataset
+  - "science"
+IN_NAME: # name of input perplexities
+  - 'path to calculated perplexities'
+LEMMA: # whether lemma or definition is used
+  - true
+REVERSE: # whether hypernyms or hyponyms are predicted
+  - true
+LOW: # lower threshold
+  - 1
+HIGH: # higher threshold
+  - 5
+STEP: # step to make
+  - 0.01
